@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BotChat"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ques"
+            android:layout_width="300dp"
+            android:padding="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:hint="Ask something...">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/black"
+            ></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_gravity="center">
+        <TextView
+            android:paddingTop="20dp"
+            android:id="@+id/textView1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Get Your Answer here..." />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

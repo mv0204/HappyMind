@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "550179556886",
+    "project_id": "happy-mind-ce92b",
+    "storage_bucket": "happy-mind-ce92b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550179556886:android:759f76f78303142aec6f37",
+        "android_client_info": {
+          "package_name": "com.example.happymind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550179556886-1p2ajpuretcq43hh1vlraiu6en4aale6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ_oytpNnyU_6E8RUf9H2cCJpiPKf2geQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550179556886-1p2ajpuretcq43hh1vlraiu6en4aale6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
