@@ -16,7 +16,22 @@
         android:theme="@style/Theme.HappyMind"
         tools:targetApi="31">
         <activity
-            android:name=".JournalMainActivity"
+            android:name=".upi_payement"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor"
+            android:exported="false" />
+        <activity
+            android:name=".Food"
+            android:exported="false" />
+        <activity
+            android:name=".Yoga"
+            android:exported="false" />
+        <activity
+            android:name=".Music"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.JournalMainActivity"
             android:exported="false" />
         <activity
             android:name=".ChatMain"
@@ -42,9 +57,7 @@
         <activity
             android:name=".BotChat"
             android:exported="false" />
-        <activity
-            android:name=".Notes.JournalMainActivity"
-            android:exported="false" />
+
         <activity
             android:name=".ChatWindow"
             android:exported="false" />

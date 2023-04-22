@@ -34,8 +34,7 @@ public class ChatMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_main);
-
-        getSupportActionBar().hide();
+        
 
 
         database = FirebaseDatabase.getInstance();

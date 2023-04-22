@@ -74,6 +74,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/doct"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
                     android:layout_width="match_parent"
@@ -212,6 +213,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/chat"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/btn4"
@@ -227,7 +229,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="To-Do List"
+                            android:text="Chat Bot"
                             android:textSize="25sp"
                             android:textColor="#FAF5F5"
                             android:textStyle="normal"
@@ -236,7 +238,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Manage Your Hoursow N"
+                            android:text="Share Your Thoughts With AI.."
                             android:textSize="16sp"
                             android:textColor="#DDFBF6F6"
                             android:textStyle="normal"
@@ -305,6 +307,7 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
+                        android:id="@+id/yogabtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/btn2"
@@ -341,6 +344,7 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
+                        android:id="@+id/musicbtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/btn2"
@@ -494,6 +498,7 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
+                        android:id="@+id/foodbtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/btn2"

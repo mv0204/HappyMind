@@ -1,12 +1,17 @@
 package com.example.happymind.Notes;
 
+import android.app.Notification;
+import android.content.Intent;
 import android.os.Bundle;
+import android.speech.RecognizerIntent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.happymind.R;
@@ -19,6 +24,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
 
     EditText titleEditText,contentEditText;
     ImageButton saveNoteBtn;
+    ImageView mic;
     TextView pageTitleTextView;
     String title,content,docId;
     boolean isEditMode = false;
@@ -34,6 +40,17 @@ public class NoteDetailsActivity extends AppCompatActivity {
         saveNoteBtn = findViewById(R.id.save_note_btn);
         pageTitleTextView = findViewById(R.id.page_title);
         deleteNoteTextViewBtn  = findViewById(R.id.delete_note_text_view_btn);
+        mic=findViewById(R.id.Mic);
+
+        mic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+                intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Start Speaking...");
+                startActivityForResult(intent,111);
+            }
+        });
 
         //receive data
         title = getIntent().getStringExtra("title");
@@ -117,5 +134,11 @@ public class NoteDetailsActivity extends AppCompatActivity {
         });
     }
 
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==111 && resultCode==RESULT_OK){
+            contentEditText.setText(data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS).get(0));
+        }
+    }
 }

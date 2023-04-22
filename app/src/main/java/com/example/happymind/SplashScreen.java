@@ -18,7 +18,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        getSupportActionBar().hide();
+
         imageView=findViewById(R.id.imagev);
         textView=findViewById(R.id.textv);
         new Handler().postDelayed(new Runnable() {
